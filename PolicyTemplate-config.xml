@@ -1,0 +1,45 @@
+<policy>
+    <general>
+        <!-- Enable ID or Name for a Site-based Policy
+        <site>
+            <id>%SITE_ID%</id>
+            <name>%SITE_NAME%</name>
+        </site> -->
+        <name>%PROD_NAME%</name>
+        <enabled>true</enabled>
+        <frequency>Ongoing</frequency>
+        <trigger_other>setup</trigger_other>
+        <category>
+            <name>%POLICY_CATEGORY%</name>
+        </category>
+    </general>
+    <scope>
+        <all_computers>false</all_computers>
+        <computer_groups>
+          <computer_group>
+            <name>Conference Room Minis</name>
+          </computer_group>
+        </computer_groups>
+    </scope>
+    <package_configuration>
+        <!--Package added by JSSImporter-->
+    </package_configuration>
+    <reboot>
+      <startup_disk>Current Startup Disk</startup_disk>
+      <specify_startup/>
+      <no_user_logged_in>Do not restart</no_user_logged_in>
+      <user_logged_in>Do not restart</user_logged_in>
+      <minutes_until_reboot>5</minutes_until_reboot>
+      <file_vault_2_reboot>false</file_vault_2_reboot>
+    </reboot>
+    <scripts>
+        <!--Scripts added by JSSImporter-->
+    </scripts>
+    <self_service>
+        <!--Icons added by JSSImporter-->
+        <use_for_self_service>false</use_for_self_service>
+    </self_service>
+    <maintenance>
+        <recon>true</recon>
+    </maintenance>
+</policy>
